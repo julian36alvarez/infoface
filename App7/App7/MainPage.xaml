@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App7"
+             x:Class="App7.MainPage">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" Padding="0,20,0,0">
+                <Image Source="chip.jpg"  HeightRequest="200"/>
+                <Image Source="thumbnail.jpg"  x:Name="imgChoosed" HeightRequest="200"/>
+                <Button x:Name="BtnPick" Text="Buscar Foto" Clicked="BtnPick_Clicked"></Button>
+                <Button x:Name="BtnTake" Text="Tomar Foto"  Clicked="BtnTake_Clicked" ></Button>
+                <Label Text="Resultado" x:Name="lblResult"></Label>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+
+</ContentPage>
